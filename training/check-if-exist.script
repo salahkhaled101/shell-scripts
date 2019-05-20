@@ -1,0 +1,23 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will do check for files
+
+Files="/etc/pass
+/etc/group
+/etc/shadow
+/etc/nsswitch.conf
+/etc/sshd_ssh_config
+/etc/fake"
+
+echo
+for file in $Files
+do
+	if [ ! -e $file ]
+	then
+	echo $file dont exist
+	echo
+	fi	
+done
+echo End Of Script

@@ -1,0 +1,15 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will make initail script
+
+clear
+echo 'please enter the name of the new Script : '
+read name
+cat default-script > $name
+chmod a+x $name
+echo the Script $name is created 
+echo
+echo 'End of Script'
+

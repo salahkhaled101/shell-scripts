@@ -1,0 +1,19 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will do
+echo
+echo This script will run basic administrative commands
+echo 
+top | head -10
+echo
+df -h
+echo
+free -m
+echo
+uptime
+echo
+iostat
+echo
+echo End of Script

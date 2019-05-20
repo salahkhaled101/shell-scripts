@@ -1,0 +1,11 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will delete old files
+
+#touch -d "Thu, 1 March 2018 12:30:00" a    ==> this command to create file with old date  
+
+clear 
+find /home/salah/scripts -mtime +90 -exec rm {} \;
+

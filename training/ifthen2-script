@@ -1,0 +1,16 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will check if the file exist or not
+
+clear
+if [ -e /home/salah/scripts/ifthen-script ]
+	
+	then
+	echo "File exist"
+	else
+	echo "File does not exist"
+fi 
+echo
+echo end of script

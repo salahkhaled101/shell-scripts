@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will copy file to Remote Hoosts
+
+a=`cat /home/salah/hosts`
+for i in $a
+do
+	scp somefile $i:/temp
+done
+echo
+echo End Of Script 

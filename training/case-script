@@ -1,0 +1,25 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will do the choise case
+
+echo
+echo Please choose one of the option below
+echo
+echo 'a = Display Date and Time'
+echo 'b = List file and directories'
+echo 'c = List users logged in'
+echo 'd = Check System uptime'
+echo
+
+	read choises
+	case $choises in
+a) date;;
+b) ls;;
+c) who;;
+d) uptime;;
+*) echo Invalid choise -bye
+		esac
+echo
+echo END OF Script

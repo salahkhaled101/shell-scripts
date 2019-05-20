@@ -1,0 +1,26 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will do
+
+# Define variables
+p=pwd
+l=ls
+d=date
+wi=whoami
+c='cal 2018'
+
+echo Run variables tasks
+echo
+$p
+echo
+$l
+echo
+$d
+echo
+$wi
+echo
+$c 
+echo
+echo End of Script

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Owner : Salah Khaled
+# Date : 12/24/2018
+# Modification : 12/24/2018
+
+a='My name is salah khaled'
+
+echo $a
+
+date
+
+df -h
+
+	if { $a -eq file }
+	then echo this
+	else
+	echo that
+ 	fi
+ 

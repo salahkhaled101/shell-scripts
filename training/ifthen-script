@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will do if else statement
+
+count=100
+if [ $count -eq 100 ]
+then
+  echo count is equal to 100
+else
+  echo count NOT = 100
+fi

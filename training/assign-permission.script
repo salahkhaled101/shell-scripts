@@ -1,0 +1,16 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will assign a permission to alot of files
+
+total=`ls -l salah* | wc -l`   
+echo It will take $total seconds to assign permissions
+echo
+
+for i in salah.*
+	do
+		echo Assigning write permission to $i
+		chmod a+x $i
+		sleep 1
+	done

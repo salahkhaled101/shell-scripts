@@ -1,0 +1,24 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will do
+
+a=`hostname`
+echo hello my server name  is $a
+echo
+echo what is your name?
+read b
+echo
+echo What is your profession?
+read c
+echo
+echo What is your favorite show?
+read d
+echo
+echo
+echo hello $b
+echo your profession is $c
+echo $d is a good show
+echo 
+echo End of script

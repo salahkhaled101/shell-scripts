@@ -1,0 +1,27 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will create backup of /etc and /var directories using tar command
+
+clear 
+
+tar cvf /tmp/backup.tar /etc /var 
+
+gzip /tmp/backup.tar
+
+find backup.tar.gz -mtime -1 -type f -print &> /dev/null
+
+if [ $? -eq 0 ]
+	then 
+	     echo backup was created
+             echo
+	     echo archiving backup
+	     #scp /tmp/backup.tar.gz root@192.168.1.x:/path    # to send it to anthor hosts
+	else
+	     echo bachup failed
+fi
+
+echo
+echo End Of Script
+

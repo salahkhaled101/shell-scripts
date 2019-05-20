@@ -1,0 +1,12 @@
+#!/bin/bash
+# Author         : Salah Khaled
+# Date Created   : 12/25/2018
+# Date Modified  : 12/25/2018
+# Description    : This script will rename files ending with .txt
+
+
+for fn in *.txt
+do
+	mv $fn  ${fn%.txt}.none
+done
+echo End Of Script
